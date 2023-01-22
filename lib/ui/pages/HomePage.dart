@@ -40,8 +40,7 @@ class _HomePageState extends State<HomePage> {
                         )
                     ),
                     const SizedBox(height: 30),
-                    Center(
-                      child: GestureDetector(
+                    GestureDetector(
                         onTap: () {
                           print('Navigation vers la page MainMenu');
                           Navigator.of(context).push(
@@ -78,10 +77,15 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
-                    ),
                 ],),
-              const SizedBox(height: 185),
-              const Image(image: AssetImage('assets/images/homepagedoctor.png')),
+              const SizedBox(height: 10),
+              Container(
+                alignment: Alignment.bottomRight,
+                margin: EdgeInsets.only(top: 150),
+                width: 600,
+                height: 400,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(image: AssetImage('assets/images/homepagedoctor.png')))),
               ],
             )),
         ),

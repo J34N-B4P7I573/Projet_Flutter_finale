@@ -210,6 +210,7 @@ class _MainMenuState extends State<MainMenu> {
                                 ),
                         ),
                     ))]),
+                const SizedBox(height: 15),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -388,7 +389,7 @@ class _MainMenuState extends State<MainMenu> {
 
                   ]
                 ),
-                const SizedBox(height: 40),
+                const SizedBox(height: 25),
                 Container(
                   width: 400,
                   height: 50,
